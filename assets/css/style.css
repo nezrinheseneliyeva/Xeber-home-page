@@ -130,24 +130,189 @@ a{
     margin-left:500px ;
     font-size: 27px;
 }
-.card{
-    width: 916px;
-    height: 550px;
+/* Ana konteyneri tənzimləyirik */
+/* Ana konteyneri tənzimləyirik */
+/* Bu hissəni tap və height-ı auto et */
+.card_location {
     display: flex;
-    gap: 40px;
-    margin-top: 8px;
-   
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    height: auto !important; /* SABİT HÜNDÜRLÜYÜ SİL! */
+    margin-top: 40px;
+    padding-bottom: 50px; /* Footer ilə arasına boşluq qoyur */
 }
-.card-body{
-    width: 438px;
-    height: 520px;
-    background-color: #FFFFFF;
-     box-shadow: 10px 10px 8px #888888;
+
+/* Footer-in footer olaraq qalması üçün */
+.home_footer {
+    margin-top: 60px;
+    width: 100%;
+    height: 250px;
+    background-color: #0E1E32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clear: both; /* Bu, footer-in hər zaman ən aşağıda qalmasını təmin edir */
 }
-.card_text{
-    width: 388px;
-    margin-left: 25px;
+
+/* Sol tərəf (Xəbər kartları) */
+.news-wrapper {
+    width: 900px; /* Sabit genişlik */
 }
+
+
+.live_location {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* İki kart arasında boşluq */
+}
+.live_card {
+    width: 370px;
+    overflow: hidden; /* Şəklin kənara çıxan hissəsini gizlədir */
+}
+
+.live_card span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #C31815;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+
+#live-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2A2A2A;
+    line-height: 27px;
+    font-family: "IBM Plex Serif", serif;
+    margin-top: 12px;
+}
+
+/* --- Location Bölməsinin Stili --- */
+.location {
+    width: 370px;
+    height: auto;
+}
+/* Location News Başlığı */
+.location h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: "IBM Plex Serif", serif;
+    color: #2A2A2A;
+}
+
+/* Kartın arxa fonu və forması */
+.location_card {
+    width: 370px;
+    background-color: #FFFFFF; /* Ağ fon */
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 1px solid #f0f0f0; /* Çox yüngül çərçivə */
+}
+
+.location_card p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #141414;
+    font-family: "Poppins", sans-serif;
+}
+
+.location_card input {
+    width: 100%; /* Kartın eninə uyğunlaşdır */
+    height: 50px;
+    margin: 16px 0;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.location_card button {
+    width: 120px;
+    height: 45px;
+    background-color: #C31815; /* Qırmızı düymə */
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.location_card {
+    width: 370px;
+    height: 216px;
+    background-color: #F8F8F8; /* Arxa fon rəngi biraz fərqli olsun ki, seçilsin */
+    padding: 30px 20px;
+    box-sizing: border-box; /* padding-in eni artırmasının qarşısını alır */
+}
+#live-img {
+    width: 100%;       /* Şəkil həmişə valideyn div-in (370px) enində olacaq */
+    height: 200px;     /* Sabit hündürlük */
+    object-fit: cover; /* Şəkli dartmadan, mərkəzdən kəsərək yerinə oturdur */
+    display: block;    /* Aradakı boşluqları yığışdırır */
+    border-radius: 5px; /* İstəyə bağlı: kənarlarını yumşaldır */
+}
+.location_card p {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #2A2A2A;
+    margin-bottom: 10px;
+}
+
+.location_card input {
+    width: 330px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.location_card button {
+    width: 100px;
+    height: 45px;
+    background-color: #C31815;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Xəbərlərin Grid sistemi */
+/* Xəbərlərin yerləşdiyi sol tərəf */
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 sütunlu düzülüş */
+    gap: 20px;
+    width: 100%; /* Konteynerin enini aşmasın */
+}
+
+/* Şəkillərin kartdan çıxmaması üçün */
+.card-body {
+    width: 100%;
+    overflow: hidden; /* Əgər şəkil böyükdürsə, kənara çıxan hissəni gizlədir */
+}
+
+/* Şəkil və mətn ölçüləri */
+.card-body img {
+    width: 100%;       /* Şəkil həmişə kartın eni qədər olsun */
+    height: 200px;     /* Hündürlüyü sabit saxla */
+    object-fit: cover; /* Şəkli dartmadan, düzgün şəkildə kəsərək yerləşdirir */
+    display: block;    /* Aradakı boşluqları aradan qaldırır */
+}
+
+.card_text {
+    width: 100%; /* Bura 388px idi, bu qarışdırırdı, 100% etdik */
+    margin-left: 0;
+    padding: 10px;
+}
+
 .card_text h1{
     font-size: 18px;
     font-weight: 600;
@@ -197,7 +362,7 @@ a{
 }
 .live_card{
     width: 370px;
-    height: 324px;
+    height: 340x;
 }
 .live_card p{
     font-size: 18px;
@@ -312,15 +477,7 @@ h1{
     font-family: "Poppins", sans-serif;
     margin-top: 60px;
 }
-.home_footer{
-    margin-top: 60px;
-    width: 100%;
-    height: 250px;
-    background-color: #0E1E32;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .footer_div{
     width: 1133px;
     height: 117px;

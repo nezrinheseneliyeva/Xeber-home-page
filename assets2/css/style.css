@@ -1,0 +1,397 @@
+@import url(reset.css);
+.cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#headers{
+    width: 100%;
+    height: 80px;
+    background-color: #FDFDFD;
+    display: flex;
+    align-items: center;
+    gap: 124px;
+}
+.header_logo img{
+    width: 63px;
+    height: 52px;
+    margin-left: 295px;
+  
+}
+#navbar{
+    height: 22px;
+    
+   
+}
+#navbar_list{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: #2A2A2A;
+    font-size: 16px;
+    font-weight: 600;
+     font-family: "Nunito Sans", sans-serif;
+}
+.users{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    color: #2A2A2A;
+}
+
+.detayUI_cover{
+    width: 1050px;
+    margin-top: 100px;
+    
+}
+.section_panel{
+display: flex;
+    gap: 90px;
+}
+
+.header-image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+}
+.detayUI{
+    position: absolute;
+    
+}
+.detayUI img{
+    margin-top: 520px;
+    margin-bottom: 30px;
+    width: 1050px;
+    height: 423px;
+}
+
+.detay_header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 1920px;
+    height: 410px;
+    background-color: #0E1E32;
+}
+.detay_header h1{
+    font-size: 42px;
+    font-weight: 600;
+    color: #FFFFFF;
+     font-family: "IBM Plex Serif", serif;
+     width: 800px;
+     margin-top: 60px;
+}
+.text{
+    display:flex ;
+    gap: 20px;
+    margin-bottom: 15px;
+    margin-top: 38px;
+}
+.text span, p{
+font-size: 13px;
+font-weight: 400;
+font-family: "Poppins", sans-serif;
+}
+.text_content{
+    width: 705px;
+    height: 396px;
+    display: grid;
+  row-gap: 20px;
+}
+
+.text_content p{
+    line-height: 27px;
+    color: #2A2A2A;
+    font-size: 18px;
+    font-weight: 400;
+     font-family: "Nunito Sans", sans-serif;
+  
+}
+.panel_content{
+    width: 255px;
+    height: 420px;
+    background-color: #FFFFFF;
+}
+.right_panel{
+    margin-top: 40px;
+}
+.right_panel h1{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+    
+}
+.panel_content p{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "IBM Plex Serif", serif;
+    margin-top: 20px;
+    margin-left: 29px;
+}
+.second_header{
+    width: 705px;
+    height: 174px;
+    border-bottom:1px solid red ;
+    border-top:1px solid red  ;
+    margin-top: 40px;
+    padding-top: 25px;
+    
+}
+.second_header h1{
+font-size: 28px;
+    font-weight: 400;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.second_photo {
+    width: 560px;
+    height: 319px;
+    margin-top: 40px;
+    margin-left: 73px;
+}
+.paraqraf{
+    width: 549px;
+    height: 59px;
+    margin-left: 93px;
+    margin-top: 10px;
+}
+.paraqraf p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 21px;
+    
+}
+p span{
+    color: red;
+}
+.crowds_text{
+    width: 705px;
+    height: 477px;
+    display: grid;
+    row-gap: 20px;
+    margin-top: 40px;
+}
+.crowds_text p{
+    font-size: 18px;
+    font-weight: 400;
+     font-family: "Nunito Sans", sans-serif;
+     color: #2A2A2A;
+
+}
+.photo3{
+    width: 560px;
+    height: 374px;
+    margin-left: 73px;
+    margin-top: 40px;
+}
+
+.sign_up{
+    background-color: #FFFFFF;
+    width: 705px;
+    height: 245px;
+    padding-top: 40px;
+    padding-left: 30px;
+    box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+.sign_up h1{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2A2A2A;
+    font-family: "IBM Plex Serif", serif;
+    
+    
+    margin-bottom: 10px;
+}
+.sign_up span{
+    font-size: 13px;
+    font-weight: 400;
+    color: #2A2A2A;
+   font-family: "Poppins", sans-serif;
+   
+}
+.sign_up p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #2A2A2A;
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 25px;
+    margin-top: 13px;
+}
+.sign_up button{
+   width: 240px;
+   height: 40px;
+   background-color: #C31815;
+   font-size: 18px;
+    font-weight: 400;
+    line-height: 15px;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+}
+
+.btn_group{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+.btn_group button{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #F6DDDC;
+    color: #C31815;
+    border: none;
+}
+.icon_groups{
+    display: flex;
+    gap: 340px;
+}
+.icon_group{
+    display: flex;
+    align-items: center;
+    margin-top: 41px;
+}
+.icon_group i{
+    font-size: 29px;
+    
+}
+.icon_group p{
+    margin-right: 40px;
+    
+}
+.divider {
+    border: none;              
+    border-top: 2px solid #e0e0e0; 
+    margin: 30px 0;    
+     width: 705px;
+}
+
+.author_caroline{
+    display: flex;
+    width: 705px;
+    height: 148px;
+}
+.caroline_img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+}
+.caroline_text{
+    width: 356px;
+    margin-left: 22px;
+}
+.caroline_text h1{
+    margin-bottom: 12px;
+    margin-top: 5px;
+     font-size: 20px;
+   font-weight: 700;
+   font-family: "Nunito Sans", sans-serif;
+}
+.caroline_text p{
+   font-size: 15px;
+   font-weight: 400;
+   font-family: "Nunito Sans", sans-serif;
+   line-height: 22px;
+}
+.caroline_btn{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+   font-weight: 500;
+    width: 145px;
+    height: 40px;
+    border: 1px solid #C31815;
+    color: #C31815;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.section_end{
+    width: 1363px;
+    height: 464px;
+    margin-top: 30px;
+}
+.detay_card{
+    display: flex;
+    gap: 22px;
+}
+.card_child{
+    width: 255px ;
+    height: 357px;
+    background-color: #FFFFFF;
+}
+.card_child p{
+    width: 215px;
+   min-height:70px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "IBM Plex Serif", serif;
+    color: #222222;
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 100%;
+    
+
+}
+.card_child i{
+margin-top: 35px;
+margin-left: 20px;
+}
+.card_child span{
+margin-right: 30px;
+
+}
+.home_footer{
+    margin-top: 60px;
+    width: 100%;
+    height: 250px;
+    background-color: #0E1E32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_div{
+    width: 1133px;
+    height: 117px;
+    display: flex;
+    
+}
+.footer_photo{
+    margin-right: 180px;
+}
+.footer_photo img{
+    width: 66px;
+    height: 40px;
+}
+.footer_photo p{
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+.list{
+    color: white;
+    list-style: none;
+    margin-right: 148px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer_icons p{
+    color: #FFFFFF;
+}
+.footer_icons{
+    display: flex;
+}
+.footer_icons i{
+    font-size: 24px;
+    color: #FFFFFF;
+}
